@@ -1,5 +1,5 @@
 // TiposDeDados.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//Editado Por João Gabriel Leite da Silva
 
 #include <iostream>
 using namespace std;
@@ -73,7 +73,46 @@ int main()
 
 	cout << "Qualquer tecla para sair...";
 	system("pause"); // somente no Windows
+	system("cls");
 
 
+	cout << "Exercicio 1\n";
+
+#include <climits>
+	cout << "int  max = " << INT_MAX << "\n";
+	cout << "int  min = " << INT_MIN << "\n";
+	cout << "short max = " << SHRT_MAX << "\n";
+	cout << INT_MAX + 1 << endl;
+	system("pause");
+	system("cls");
+
+
+	cout << "Exercicio 2\n";
+	double temperatura = 0;
+	double fahrenheit = 0;
+	double kelvin = 0;
+
+	cout << "Digite uma temperatura em graus Celsius:\n";
+	cin >> temperatura;
+	fahrenheit = temperatura * 1.8 + 32;
+	cout << temperatura << "Celsius em Fahrenheit: " << fahrenheit << endl;
+	kelvin = temperatura = 273, 15;
+	cout << temperatura << "Celsius em Kelvin: " << kelvin << endl;
+
+	system("pause");
+	system("cls");
+
+	cout << "Exercicio 3\n";
+	long seconds = 0;
+	cout << "Digite uma quantia de segundos: \n";
+	cin >> seconds;
+	long secRes = seconds % 60;
+	cout << "Segundos restantes: " << secRes << endl;
+	long minutes = seconds / 60;
+	cout << "Minutos restantes: " << minutes << endl;
+	long hours = minutes / 60;
+	cout << "Horas restantes: " << hours << endl;
+	long days = hours / 24;
+	cout << "Dias restantes: " << days << endl;
 }
 
